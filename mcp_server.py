@@ -18,7 +18,7 @@ from pathlib import Path
 
 # ── v4_modules インポート（ツール登録のみ・main()は実行しない）────────
 import sys
-V4_DIR = Path(__file__).parent
+V4_DIR = Path(__file__).parent.parent
 if str(V4_DIR) not in sys.path:
     sys.path.insert(0, str(V4_DIR))
 logging.disable(logging.CRITICAL)
